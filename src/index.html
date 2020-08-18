@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog App</title>
 </head>
+
 <body>
     <!-- <root id="root"></root> -->
     <div class="container">
         <h1>Let's look at dogs!</h1>
-    
-        <form>
-          <input type="submit" value="Get a dog pic!">
+
+        <form id="js-form">
+            <label for="max-results">How many dogs would you like to see?</label>
+            <input type="number" name="max-results" id="js-max-results" value="3">
+
+            <input type="submit" value="Go!">
         </form>
-        <div class="hidden"></div>
-        </div>
+
+        <section id="results" class="hidden">
+            <h2>Here's your dogs!</h2>
+            <ul id="results-list"></ul>
+        </section>
 </body>
+
 </html>
